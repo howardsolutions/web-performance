@@ -2,7 +2,7 @@
 
 ## 🥸 The First Problem - If the website is slow
 
-👉 We are losing $$$$ because of less conversion, bad user experience
+👉 We are losing $$$$ because of less conversion, bad user experience <br />
 👉 It's mostly Frontend Responsibilities
 
 ## You're already doing things below to optimize the website
@@ -38,6 +38,8 @@
 
 ### BROWSER-CENTRIC METRICS
 
+<details>
+    <summary>Here is the List</summary>
 👉 Time to First Byte (TTFB) - browser sending http request to the server to get the response, this metric is all about time for the browser to load the first Byte from the response
 
 👉 First Paint - First time browser paint something to the screen
@@ -45,6 +47,8 @@
 👉 Page Load (Not using this event anymore at modern day)
 
 👉 Browser centric metrics are NOT SO IMPORTANT for WEB PERFORMANCE OPTIMIZATION
+
+</details>
 
 ### USER-CENTRIC METRICS
 
@@ -74,3 +78,32 @@
 #### Largest Contenful Paint (LCP)
 
 #### Custom Metric
+
+<hr />
+
+# CORE WEB VITALS
+
+<b>Today, Core Web Vitals is actually including 3 metrics</b>
+
+## Largest Contentful Paint (LCP) - Initial Load
+
+<details open>
+👉 How fast at which point your content appears on the screen
+
+👉 Because it has to do with the screen, it'll be different on different viewport sizes
+
+</details>
+
+## First Input Delay - FID - Interactivity
+
+<details open>
+👉 at which moment you're releasing the thread enough to interact with the content
+</details>
+
+## Cumulative Layout Shift - CLS - Visual Stability
+
+<details open>
+👉 we dont want the content to ship around while the page load
+</details>
+
+## Interaction to Next Paint = Responsiveness
