@@ -107,3 +107,16 @@
 </details>
 
 ## Interaction to Next Paint = Responsiveness
+
+![Perfomance Budget](/adv-webpref/images/performance-budget.png)
+
+## Where to Optimize?
+
+![Where to Optimize](/adv-webpref/images/where%20to%20optimize.png)
+
+👉 It's Frontend Responsibility <br />
+👉 Optimize the Backend has LESS impact and it's not a simple or Cheap Task. <br />
+
+🌟 OPTIMIZE THE FRONTEND HAS HIGH IMPACT, It's relatively CHEAP to optimize and RESULTS are IMMEDIATE.
+
+<hr />
