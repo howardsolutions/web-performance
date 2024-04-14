@@ -123,7 +123,7 @@
 
 # BASIC OPTIMIZATION
 
-## Procss of browsing the web
+## Process of browsing the web
 
 ![Process of browsing website](./images/Browsing%20the%20web.png)
 
@@ -169,3 +169,17 @@ Browser check the cache to see if we have the version of that file or not.
     👉 You shouldn't use unload events, Cache-Control: no-store <br />
     👉 Use Page Navigation API to Open / restore Connections Or Abort pending transactions
 </details>
+
+## Service Worker and Cache Storage
+
+### Quick Definition of Service Worker
+
+👉 A service worker is a web server written in JavaScript that we install locally on user's device <br />
+👉 It's kind of the similar algorithm with the Browser Cache, the difference is that this is written by us <br />
+👉 Instead of relying on the browser's cache, now you have your own cache <br />
+👉 Service worker might not help the first initial visit of user, BUT it might help from the second visit, because next time we can serve the files locally <br />
+👉 Can improve the core web vital (performance) a lot, because we dont need go to the network every time
+
+<b> One Use Case / Design Pattern for using Service Worker and Cache Storage </b>
+
+![Use Case Using Service Worker](./images/use%20case%20of%20using%20service%20worker.png)
