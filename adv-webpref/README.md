@@ -1,4 +1,4 @@
-# Web Performance Notes
+# Web Performance Notes 🏎️
 
 ## 🥸 The First Problem - If the website is slow
 
@@ -120,3 +120,42 @@
 🌟 OPTIMIZE THE FRONTEND HAS HIGH IMPACT, It's relatively CHEAP to optimize and RESULTS are IMMEDIATE.
 
 <hr />
+
+# BASIC OPTIMIZATION
+
+## Procss of browsing the web
+
+![Process of browsing website](./images/Browsing%20the%20web.png)
+
+## Evolution of HTTP: 1.1 -> 2 -> 3
+
+## Browser Cache
+
+Typically we gonna focus on the `Resource Discovery Queue`
+
+### How The Cache on Browser Work? 🥸
+
+Browser check the cache to see if we have the version of that file or not.
+
+👉 Define Cache Headers per file
+
+- Absolute expiration date (1.0) - Example: `this file will expired at 4PM, May 21, 2024` <br />
+- Relative expiration date (1.1) - Example: `this file will expired after 2 months, 1 year,...` <br />
+- More specs / values
+
+👉 Browser needs a resource
+
+1. It checks the Cache <br />
+   A) Cache Miss: we go to the network <br />
+
+   B) Cache HIT: the file we need are in the Cache
+
+   🚨 It's Expired --> It's make `conditional request` <br />
+
+   Server Response Can be:
+
+   1. Not modified (updated cache Header)
+      OR
+   2. OK, New File
+
+   🟢 It's NOT expired => We use the file from the Cache
