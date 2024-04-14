@@ -8,14 +8,14 @@
 ## You're already doing things below to optimize the website
 
 <details> 
-<summary>Here is The List</summary>
-👉 Optimize Network Transfer <br />
-👉 Working with HTTPS and HTTP2 <br />
-👉 CSS as Appetizer<br />
-👉 JavaScript<br />
-👉 Optimizing Images<br />
-👉 Defining Policy for HTTP Cache<br />
-👉 Using Service Worker
+    <summary>Here is The List</summary>
+    👉 Optimize Network Transfer <br />
+    👉 Working with HTTPS and HTTP2 <br />
+    👉 CSS as Appetizer<br />
+    👉 JavaScript<br />
+    👉 Optimizing Images<br />
+    👉 Defining Policy for HTTP Cache<br />
+    👉 Using Service Worker
 </details>
 <br />
 
@@ -183,3 +183,22 @@ Browser check the cache to see if we have the version of that file or not.
 <b> One Use Case / Design Pattern for using Service Worker and Cache Storage </b>
 
 ![Use Case Using Service Worker](./images/use%20case%20of%20using%20service%20worker.png)
+
+<hr />
+
+## RESOURCE LOADING, FRAMES, INTERACTIVITY
+
+### 👉 JavaScript blocks PARSING BY DEFAULT
+
+<details>
+    Browser is reading the HTML, if it encouters a JS, it will stop parsing <br />
+    it will not read the rest of the HTML
+</details>
+
+<strong>👉 If we block PARSING, we're ALSO blocking RENDERING, because RENDERING happens AFTER Parsing. </strong>
+
+### 👉 CSS Blocks Rendering
+
+<details>
+    The browse will never render the pixel on the screen if ALL the CSS that is known at that moment was now downloaded and parsed. 
+</details>
