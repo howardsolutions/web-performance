@@ -159,3 +159,13 @@ Browser check the cache to see if we have the version of that file or not.
    2. OK, New File
 
    🟢 It's NOT expired => We use the file from the Cache
+   <hr />
+
+## Back / Forward Cache (BF Cache)
+
+<details open>
+    👉 It keeps your page navigation in memory if the user navigates away <br />
+    👉 It's automatic  <br />
+    👉 You shouldn't use unload events, Cache-Control: no-store <br />
+    👉 Use Page Navigation API to Open / restore Connections Or Abort pending transactions
+</details>
