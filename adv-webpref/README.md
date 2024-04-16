@@ -200,5 +200,35 @@ Browser check the cache to see if we have the version of that file or not.
 ### 👉 CSS Blocks Rendering
 
 <details>
-    The browse will never render the pixel on the screen if ALL the CSS that is known at that moment was now downloaded and parsed. 
+    The browse will never render the pixel on the screen if ALL the CSS that is known at that moment was not downloaded and parsed. 
+</details>
+
+## Some Basic Performance Opitmization
+
+<details>
+<summary>Here is the Long List </summary>
+👉 Enable GZIP on text-based files (HTML Static and Dynamic), JS, CSS, JSON and SVG <br />
+
+👉 Make Static Content Expire Late in the FUTURE
+
+👉 Use a CDN for static content (CDN has servers all across over the world => closer to the user => the latencies will be shorter => lead to better user experience)
+
+👉 Consider implementing HTTP/2 and HTTPS
+
+👉 Use cookie-less domain
+
+👉 Reduce cookie size
+
+👉 Reduce Redirects (redirects are expensive)
+
+👉 JavaScript as Dessert => We should DEFER it AS MUCH AS POSSIBLE, it uses the main thread, remove or defer unused code, JS is the most expensive asset that you have in your website
+
+👉 Compress / Obfuscate JS and CSS
+
+👉 Release the Main thread ASAP
+
+👉 Embrace Responsive Images, SVG
+
+👉 Compress Images, Define placeholder size
+
 </details>
