@@ -206,7 +206,8 @@ Browser check the cache to see if we have the version of that file or not.
 ## Some Basic Performance Opitmization
 
 <details>
-<summary> Here is the Long List 👉 Open to Read </summary>
+<summary> Here is the Long List => Open to Read 👇 </summary>
+ <br />
 👉 Enable GZIP on text-based files (HTML Static and Dynamic), JS, CSS, JSON and SVG <br />
 
 👉 Make Static Content Expire Late in the FUTURE
@@ -244,10 +245,20 @@ Browser check the cache to see if we have the version of that file or not.
     ➡️ Avoid http to httpS redirect (HSTS - HTTP Strict Transport Security) => can save around 150-200 milliseconds
 </details>
 
-## Hacking LCP by preloading HTML resources
+## Hacking LCP
 
-Help the browser discover resources that are obscure in the document
+### by preloading HTML resources
+
+Help the browser discover resources that are obscure in the document <br />
+So then your browser will know that CSS or that web file will be needed even before start rendering the HTML
 
 ```html
 <link rel="preload" href="style.css" as="style" />
+```
+
+### Fetch Priority
+
+```html
+<link rel="preload" href="style2.css" as="style" fetchpriority="high" />
+<link rel="preload" href="otherimage.png" as="image" fetchpriority="low" />
 ```
