@@ -206,7 +206,7 @@ Browser check the cache to see if we have the version of that file or not.
 ## Some Basic Performance Opitmization
 
 <details>
-<summary>Here is the Long List </summary>
+<summary> Here is the Long List 👉 Open to Read </summary>
 👉 Enable GZIP on text-based files (HTML Static and Dynamic), JS, CSS, JSON and SVG <br />
 
 👉 Make Static Content Expire Late in the FUTURE
@@ -232,3 +232,22 @@ Browser check the cache to see if we have the version of that file or not.
 👉 Compress Images, Define placeholder size
 
 </details>
+
+<hr />
+
+# Advanced Optimizations
+
+## Optimizing the FIRST LOAD
+
+<details> 
+    ➡️ Avoid more than one Roudtrip  <br />
+    ➡️ Avoid http to httpS redirect (HSTS - HTTP Strict Transport Security) => can save around 150-200 milliseconds
+</details>
+
+## Hacking LCP by preloading HTML resources
+
+Help the browser discover resources that are obscure in the document
+
+```html
+<link rel="preload" href="style.css" as="style" />
+```
