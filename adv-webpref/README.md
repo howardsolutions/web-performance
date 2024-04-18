@@ -262,3 +262,27 @@ So then your browser will know that CSS or that web file will be needed even bef
 <link rel="preload" href="style2.css" as="style" fetchpriority="high" />
 <link rel="preload" href="otherimage.png" as="image" fetchpriority="low" />
 ```
+
+### HTTP Early Hints
+
+![Http Early Hints](./images/early%20hints.png)
+
+### Optimize Data Transfer
+
+<details> 
+    ➡️ HTTP/3 - transport protocol over UDP, Reduces latency and connection messages, HTTP/2 interface with TLS
+    <br />
+    ➡️ Use Zopfli (Save 3-8% data transfer with GZIP) but it's 80x slower for compression NOT for decompression
+    <br />
+    ➡️ Brotli (Save 25% data transfer compared with GZIP, check Encoding header)
+</details>
+
+<hr />
+
+## Optimize Resource Loading
+
+➡️ Use Modern Image Formats (Not just PNG and JPEG) - use SVG for instance <br />
+➡️ WebP, AVIF, Zopfl PNG, Guetzli JPEG <br />
+➡️ Muted videos instead of GIFs <br />
+
+[Squoosh is the open source allow us to convert image](https://squoosh.app/)
