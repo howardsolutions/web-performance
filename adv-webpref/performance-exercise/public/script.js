@@ -6,7 +6,7 @@ async function load() {
             <article>
                 <h2>${exhibition.title}</h2>
                 <p>${exhibition.description}</p>
-                <img src="gallery/${exhibition.image}">
+                <img src="gallery/${exhibition.image}" loading="lazy">
             </article>
         `;
     document.querySelector('main').innerHTML += article;

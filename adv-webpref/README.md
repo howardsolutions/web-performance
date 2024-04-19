@@ -286,3 +286,31 @@ So then your browser will know that CSS or that web file will be needed even bef
 ➡️ Muted videos instead of GIFs <br />
 
 [Squoosh is the open source allow us to convert image](https://squoosh.app/)
+
+## Cache Control, dns-prefetch & preconnect (to warm up the engine)
+
+## Lazy loading Images & Fonts
+
+```html
+<img loading="lazy" /> <iframe loading="lazy"></iframe>
+```
+
+```css
+font-display: optional or swap;
+```
+
+## Optimizing Interactions
+
+➡️ We SHOULD NOT doing CLIENT-SIDE RENDERING - it's terible idea for initial load, terible for performance
+better performance leads to better conversion
+<br />
+
+➡️ Move HEAVY tasks to WebAssembly
+
+➡️ Stop serving legacy code
+
+➡️ Reactive Web Performance
+
+➡️ Provide a Constistent Experience
+
+➡️ Get Reports from the Browser
