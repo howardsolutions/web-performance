@@ -314,3 +314,27 @@ better performance leads to better conversion
 ➡️ Provide a Constistent Experience
 
 ➡️ Get Reports from the Browser
+
+## Performance APIs
+
+### ➡️ Performance & Navigation Timing APIs
+
+### ➡️ Performance Observers
+
+### ➡️ Animation Frames and Input Pending
+
+<details> 
+    ➡️ Part of the latest HTML5 spec <br />
+    ➡️ Let us execute code on next frame before paiting it <br />
+    ➡️ It's GUARANTEE to be executed on next frame  <br />
+    ➡️ Better than timers (set interval and set time out) <br />
+    ➡️ We should keep code small (< 10ms ) <br />
+</details>
+
+### ➡️ Request Idle Callback and Script Yielding
+
+<details> 
+    ➡️ They execute low-priority code before each frame, if there is enough idle time <br />
+    ➡️ It sends an argument where we can query how much time is left before idle time is gone and next frame should start <br />
+    ➡️ We should stop and schedule a new Idle callback if time is zero  <br />
+</details>
