@@ -5,3 +5,5 @@ This repository contains all of my notes on Web Performance, Frontend Performanc
 With Exercise attached to each directory
 
 👉 [Advanced Web Performance](/adv-webpref/README.md)
+
+👉 [JavaScript Performance Notes and Exercise](/javascript-performance/README.md)
